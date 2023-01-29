@@ -10,3 +10,5 @@ The next step would be to obtain the name of the teams. To do this, we create an
 The next step is to fill our table with the correct values. We first fill in all indexes with team1=team2 with "--," as the same team can't play itself. Then, we run a nested while loop. The first while loops go through all the possible combinations of (team1, results). Based on team1, we know who the results belong to. The results represent another JSON object we must loop through. Thus, we create another iterator to traverse the results. Each result will contain team2, and how many wins/losses team1 had against team2. Now that we have our data, we can use our HashMap to locate the indexes in the table of team1 and team2. Our last step will be to set each value in the table and continue to iterate.
 
 Finally, we print out our table!
+
+Thank you very much. I'm excited for this opportunity!
