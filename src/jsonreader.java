@@ -23,7 +23,7 @@ public class jsonreader
 		Iterator<Map.Entry> itr1 = jo1.entrySet().iterator();
 		while (itr1.hasNext())
 		{
-            Map.Entry pair = itr1.next();
+            		Map.Entry pair = itr1.next();
 			String team=pair.getKey().toString();
 			teams[cntr]=team;
 			cntr++;
@@ -40,16 +40,16 @@ public class jsonreader
 		itr1 = jo1.entrySet().iterator();
 		while (itr1.hasNext())
 		{
-            Map.Entry pair = itr1.next();
+            		Map.Entry pair = itr1.next();
 			String team=pair.getKey().toString();
-            int index=map.get(team);
+            		int index=map.get(team);
 			Object obj=pair.getValue();
 			JSONObject jo2= (JSONObject) obj;
 			Iterator<Map.Entry> itr2 = jo2.entrySet().iterator();
 			while(itr2.hasNext()) {
-	            Map.Entry pair2 = itr2.next();
+	           		Map.Entry pair2 = itr2.next();
 				String team2=pair2.getKey().toString();
-	            int index2=map.get(team2);
+	            		int index2=map.get(team2);
 				Object obj2=pair2.getValue();
 				JSONObject jo3= (JSONObject) obj2;
 				Long a=(Long) jo3.get("W");
