@@ -1,5 +1,5 @@
 # Sports Reference Application
-Application for Sports Reference Engineer Intern
+Application for Sports Reference Engineer Intern (NOTE UPDATED ON 2/1/2023)
 
 This program takes a JSON file in the format described in the prompt. It creates a table with the format described in the prompt. The current print statement prints the output in the correct locations, but doesn't print it out in a "table". It simply has the values in the correct locations in a 2-D array as if each element were a box in the table.
 
