@@ -57,18 +57,15 @@ public class jsonreader
 			}
 		}
 		/*Print DATA*/
-		for(int j=0;j<size+1;j++) {
-			System.out.print(values[0][j]+" ");
-		}
-		System.out.println();
-		for(int i=1;i<size+1;i++) {
-			for(int j=0;j<size+1;j++) {
-				System.out.print(values[i][j]+"  ");
-			}
-			System.out.println();
-		}
-		for(int j=0;j<size+1;j++) {
-			System.out.print(values[size+1][j]+" ");
-		}
+        for(String[] row : values) {
+            printRow(row);
+        }
 	}
+	  public static void printRow(String[] row) {
+	        for (String i : row) {
+	            System.out.print(i);
+	            System.out.print("\t");
+	        }
+	        System.out.println();
+	    }
 }
